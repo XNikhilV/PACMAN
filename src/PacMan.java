@@ -58,7 +58,7 @@ public class PacMan extends JPanel{
     HashSet<Block> ghosts;
     Block pacman;
 
-    //tile map
+    //tile map for the map
     private String[] tileMap = {
         "XXXXXXXXXXXXXXXXXXX",
         "X        X        X",
@@ -83,7 +83,7 @@ public class PacMan extends JPanel{
         "XXXXXXXXXXXXXXXXXXX" 
     };
 
-    PacMan(){ // constructor
+    PacMan(){ // constructor to set everything up
         setPreferredSize(new Dimension(boardWidth, boardHeight));
         setBackground(Color.BLACK);
 
