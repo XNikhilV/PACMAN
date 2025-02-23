@@ -100,7 +100,10 @@ public class PacMan extends JPanel{
         pacmanLeftImage = new ImageIcon(getClass().getResource("./pacmanLeft.png")).getImage();
         pacmanRightImage = new ImageIcon(getClass().getResource("./pacmanRight.png")).getImage();
 
-
+        loadMap();
+        System.out.println(walls.size());
+        System.out.println(foods.size());
+        System.out.println(ghost.size());
 
 
     }
@@ -145,7 +148,7 @@ public class PacMan extends JPanel{
                     }
                     else if (tileMapChar == ' '){//food
                         Block food = new Block(null, x + 14, y + 14, 4, 4);
-                            
+                        foods.add(food);
                     }
 
             }
